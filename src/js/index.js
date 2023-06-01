@@ -15,11 +15,11 @@ botaoAlterarTema.addEventListener("click", ()=> {
    
    if(modoEscuroEstaAtivo){
     
-     imgagemBotaoTrocaDeTema.setAttribute("src", "/src/imagens/sun.png");
+     imgagemBotaoTrocaDeTema.setAttribute("src", "/projeto-listagem/src/imagens/sun.png");
    }
    else{
     
-    imgagemBotaoTrocaDeTema.setAttribute("src", "/src/imagens/moon.png");
+    imgagemBotaoTrocaDeTema.setAttribute("src", "/projeto-listagem/src/imagens/moon.png");
    }
   
 });
