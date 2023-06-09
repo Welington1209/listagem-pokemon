@@ -1,4 +1,4 @@
-body{
+body {
   font-family: 'Poppins', sans-serif;
   max-width: 1920px;
   margin: 0 auto;
@@ -6,25 +6,29 @@ body{
   color: solid-black;
 }
 
-body.modo-escuro{
+body.modo-escuro {
   background-color: hsl(300, 2%, 9%);
   color: solid-black;
 }
 
-header.modo-escuro{
+header.modo-escuro {
   background-image: url(../imagens/winter-rain-pokemon.gif);
 }
 
-footer.modo-escuro{
+footer.modo-escuro {
   background-image: url(../imagens/winter-rain-pokemon.gif);
 }
 
-header{
+header {
+
+  position: fixed;
+  width: 100%;
+
   background-image: url(../imagens/Dk4I.gif);
   background-size: cover;
-    background-repeat: no-repeat;
-     background-position-x: 50%;
-      background-position-y: 60%;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 60%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -32,47 +36,47 @@ header{
 }
 
 header .logo,
-header .imagem-botao{
+header .imagem-botao {
   width: 40px;
   transition: 0.2s ease-in-out
 }
 
-header .logo-pokemon{
+header .logo-pokemon {
   width: 150px;
   transition: 0.2s ease-in-out
 }
 
-header #botao-alterar-tema{
+header #botao-alterar-tema {
   background: none;
   border: none;
 }
 
 header .logo:hover,
 header .imagem-botao:hover,
-header .logo-pokemon:hover{
+header .logo-pokemon:hover {
   transform: scale(1.20);
   cursor: pointer;
 }
 
-main{
-  
-  padding: 25px;
+
+main {
+  padding: 200px 25px 80px 25px;
 }
 
-main .listagem-pokemon{
+main .listagem-pokemon {
   display: flex;
   flex-wrap: wrap;
-  gap:30px;
+  gap: 30px;
   justify-content: center;
 }
 
-main .cartao-pokemon{
+main .cartao-pokemon {
   background-image: url(../imagens/pokeball-cartao.jpg);
   background-size: contain;
   background-position-x: 50%;
   width: 200px;
   padding: 15px;
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   gap: 15px;
@@ -85,102 +89,93 @@ main .cartao-pokemon:hover {
   background-size: contain;
   background-position-x: 50%;
   transform: scale(1.10);
-   cursor: pointer;
+  cursor: pointer;
 }
 
-  .modo-escuro .cartao-pokemon{
-    background-image: url(../imagens/masterball.jpg);
-    color: solid-black;
-    
-  }
-  
-  .modo-escuro .cartao-pokemon:hover{
-    background-image: url(../imagens/pokeball-cartao.jpg);
-  }
-  
-  main .cartao-pokemon .informacoes{
-    display:flex;
-    justify-content: space-between;
-    border: 2px solid #333333;
-    border-radius: 10px;
-  }
-  
-  main .cartao-pokemon .informacoes span{
-    padding:5px;
-    text-transform: uppercase;
-    font-size:17px;
-  }
-  
-  main .cartao-pokemon .gif{
-    width: 90px;
-    height: 90px;
-   }
-    main .cartao-pokemon .tipos{
-      display: flex;
-      gap: 15px;
-    }
-    
-    main .cartao-pokemon .tipo{
-      padding:8px;
-      border-radius:10px;
-    }
-    
-    .grama{
-      background-image: url(../imagens/tipo-grama.jpg);
-      background-size: contain;
-      color: solid-black;
-    }
-    
-    .veneno{
-      background-image: url(../imagens/tipo-veneno.jpg);
-      background-size: contain;
-      color: #fff;
-    }
-    
-    .fogo{
-      background-image: url(../imagens/tipo-fogo.jpg);
-      background-size: contain;
-    }
-    
-    .agua{
-      background-image: url(../imagens/tipo-agua.jpg);
-      background-size: contain;
-    }
-    
-    .inseto{
-      background-image: url(../imagens/capa-inseto.png);
-      background-size: contain;
-    }
-    
-    main .descricao{
-      max-height: 80px;
-      overflow-y: scroll;
-      font-size: 14px;
-      padding-right: 10px;
-    }
-    
-    footer{
-      background-image: url(../imagens/Dk4I.gif);
-      background-size: cover;
-      background-position-x: 50%;
-      background-position-y: 95%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      font-size: 25px;
-      text-transform: uppercase;
-      padding: 45px;
-      
-      
-      
-    }
-    
-    
-    
-    
-   
-    
-    
+.modo-escuro .cartao-pokemon {
+  background-image: url(../imagens/masterball.jpg);
+  color: solid-black;
 
-  
-  
+}
+
+.modo-escuro .cartao-pokemon:hover {
+  background-image: url(../imagens/pokeball-cartao.jpg);
+}
+
+main .cartao-pokemon .informacoes {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #333333;
+  border-radius: 10px;
+}
+
+main .cartao-pokemon .informacoes span {
+  padding: 5px;
+  text-transform: uppercase;
+  font-size: 17px;
+}
+
+main .cartao-pokemon .gif {
+  width: 90px;
+  height: 90px;
+}
+
+main .cartao-pokemon .tipos {
+  display: flex;
+  gap: 15px;
+}
+
+main .cartao-pokemon .tipo {
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.grama {
+  background-image: url(../imagens/tipo-grama.jpg);
+  background-size: contain;
+  color: solid-black;
+}
+
+.veneno {
+  background-image: url(../imagens/tipo-veneno.jpg);
+  background-size: contain;
+  color: #fff;
+}
+
+.fogo {
+  background-image: url(../imagens/tipo-fogo.jpg);
+  background-size: contain;
+}
+
+.agua {
+  background-image: url(../imagens/tipo-agua.jpg);
+  background-size: contain;
+}
+
+.inseto {
+  background-image: url(../imagens/capa-inseto.png);
+  background-size: contain;
+}
+
+main .descricao {
+  max-height: 80px;
+  overflow-y: scroll;
+  font-size: 14px;
+  padding-right: 10px;
+}
+
+footer {
+  background-image: url(../imagens/Dk4I.gif);
+  background-size: cover;
+  background-position-x: 50%;
+  background-position-y: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 25px;
+  text-transform: uppercase;
+  padding: 45px;
+
+
+
+}
