@@ -27,6 +27,8 @@
     </button>
   </header>
   <main>
+    <div class="pointer"></div>
+
     <ul class="listagem-pokemon">
 
       <li class="cartao-pokemon">
@@ -238,6 +240,14 @@
   </footer>
 
   <script src="src/js/index.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.7.0.js">
+  </script>
+  <script>
+    $(document).mousemove(function (event) {
+      $('.pointer').css({ left: event.pageX, top: event.pageY })
+    })
+  </script>
 </body>
 
 </html>
