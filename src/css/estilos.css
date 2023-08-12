@@ -20,8 +20,6 @@ footer.modo-escuro {
 }
 
 header {
-
-  /* position: fixed; */
   width: 100%;
 
   background-image: url(../imagens/Dk4I.gif);
@@ -61,7 +59,6 @@ header .logo-pokemon:hover {
 
 main {
   padding: 200px 25px 80px 25px;
-  /* position: relative; */
 }
 
 main .pointer {
